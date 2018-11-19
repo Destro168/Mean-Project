@@ -1,0 +1,96 @@
+/* Layout */
+html,
+body {
+	width: 100%;
+	height: 100%;
+	max-height: 768px;
+	max-width: 1200px;
+	padding: 0px;
+	margin: auto;
+}
+
+div.header {
+	display: table;
+	width: 100%;
+	height: 5%;
+}
+
+div.center {
+	display: table;
+	width: 100%;
+	height: 90%;
+}
+
+div.center-sides,
+div.center-center {
+	display: table-cell;
+	float: left;
+	height: 100%;
+}
+
+div.center-sides {
+	width: 10%;
+}
+
+div.center-center {
+	width: 89.9%;
+}
+
+div.footer {
+	display: table;
+	width: 100%;
+	height: 5%;
+}
+
+p {
+	margin: 0%;
+}
+
+div.nav-bar-elements {
+	display: table-cell;
+	width: 25%;
+	height: 100%;
+}
+
+/* Text formatting */
+.styleTextPrimary {
+	text-decoration: underline;
+	font-size: 16px;
+	font-family: Calibri;
+	text-align: center;
+}
+
+.styleTextSecondary {
+	text-decoration: none;
+	font-size: 14px;
+	color: green;
+}
+
+.styleTextHeader {
+	text-decoration: none;
+	font-size: 18px;
+	text-align: center;
+	font-family: Calibri;
+	background-color: gold;
+}
+
+/* Colors! formatting */
+div.bg1 {
+	background-color: rgb(140, 179, 0);
+}
+
+div.bg2 {
+	background-color: #FFC383;
+}
+
+div.bg3 {
+	background-color: #94F3FF;
+}
+
+/*
+div.header * {
+	box-sizing: border-box;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+*/

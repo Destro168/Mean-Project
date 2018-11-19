@@ -1,0 +1,3 @@
+v0.0.1
+
+* Converting project from 'bad' AngularJS project to 'good' AngularJS while utilizing all of known knowledge from study.

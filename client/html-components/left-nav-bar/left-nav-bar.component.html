@@ -1,0 +1,35 @@
+
+<link rel="stylesheet" href="client/html-components/left-nav-bar/left-nav-bar.component.css">
+
+<div class="bg2">
+    <!-- Show primary items in list bar format. -->
+    <span ng-repeat="x in headerDataFormatOne; track by $index">
+        <div ng-show="serviceHeaderShow.windowShow[$index]">
+            <p class="styleTextHeader addBorder">{{x.desc}}</p>
+            <div ng-repeat="y in x.webElementsArray" class="styleTextPrimary addBorder">
+                <p class="styleTextPrimary"><a href="{{y.code}}" target="_blank">{{y.name}}</a></p>
+            </div>
+        </div>
+    </span>
+    
+    <!-- AngularJS Display. 
+        Rework and test after first half works.
+    <div ng-show="serviceHeaderShow.windowShow[3]">
+        <div class="center-sides bg2">
+            <p class="styleTextHeader addBorder">Data Structures</p>
+            <div ng-repeat="x in angular_dataStructures" class="styleTextPrimary addBorder">
+                <p class="styleTextPrimary">
+                    <div ng-click="x.updateTextArea()">{{x.name}}</div>
+                </p>
+            </div>
+
+            <p class="styleTextHeader addBorder">Module Pieces</p>
+            <div ng-repeat="x in angular_modulePieces" class="styleTextPrimary addBorder">
+                <p class="styleTextPrimary">
+                    <div ng-click="x.updateTextArea()">{{x.name}}</div>
+                </p>
+            </div>
+        </div>
+    </div>
+    -->
+</div>

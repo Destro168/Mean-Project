@@ -1,0 +1,81 @@
+
+
+Todo List:
+
+* Format CSS to be properly placed with each component. (Apparently have to still use style.css :*(. Maybe look into LESS now?)
+* Test each component to make sure that they are working as intended by adding them to index.html.
+
+Note:
+
+Following Guie : https://adrianmejia.com/blog/2014/09/28/angularjs-tutorial-for-beginners-with-nodejs-expressjs-and-mongodb/
+
+
+Reference:
+MongoClient: https://mongodb.github.io/mongo-java-driver/3.4/javadoc/com/mongodb/MongoClient.html
+
+
+MISC:
+
+
+https://www.w3schools.com/nodejs/nodejs_mongodb_create_db.asp
+https://medium.com/@saurabhkumar_4718/a-simple-nodejs-server-without-express-js-6773122d365f
+
+
+
+https://docs.angularjs.org/guide/directive
+https://www.google.com/search?q=angularjs%20templateurl&cad=h
+https://docs.angularjs.org/tutorial/step_04
+
+file:///E:/!%20My%20documents/Training/HTML-JS-CSS/angularbuilder/index.html
+https://adrianmejia.com/blog/2014/09/28/angularjs-tutorial-for-beginners-with-nodejs-expressjs-and-mongodb/
+https://www.i-programmer.info/babbages-bag/476-storage-mapping-functions.html
+
+
+Cool songs:
+https://www.youtube.com/watch?v=AlXfbVpDUdo
+ 
+---
+
+Mongoose part of tutorial:
+
+// Load mongoose package
+var mongoose = require('mongoose');
+
+// Connect to MongoDB and create/use database called todoAppTest
+mongoose.connect('mongodb://localhost/customWebsite');
+
+// Create a schema
+var MySchema = new mongoose.Schema({
+  name: String,
+  completed: Boolean,
+  note: String,
+  updated_at: { type: Date, default: Date.now },
+});
+
+// Create a model based on the schema
+var MyModel = mongoose.model('Todo', MySchema);
+
+---
+
+var myObj = new MyModel({name: 'Master NodeJS', completed: false, note: 'Getting there...'});
+myObj.save(function(err){
+  if(err)
+    console.log(err);
+  else
+    console.log(myObj);
+});
+
+----
+
+// Find all data in the Todo collection
+MyModel.find(function (err, aSchema) { 
+    console.log(aSchema);
+});
+
+--
+
+https://mongoosejs.com/docs/
+
+
+https://docs.mongodb.com/manual/data-modeling/
+https://code.tutsplus.com/articles/an-introduction-to-mongoose-for-mongodb-and-nodejs--cms-29527

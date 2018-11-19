@@ -1,0 +1,21 @@
+div.center-sides, div.center-center {
+	display: table-cell;
+	float: left;
+	height: 100%;
+}
+
+div.center-sides { width: 10%; } 
+div.center-center { width: 89.9%; }
+
+textarea,
+pre {
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	-webkit-tab-size: 4;
+	tab-size: 4;
+	margin: 5px;
+}
+
+.addDividingBorder {
+	border-left: 1px solid black;
+}
