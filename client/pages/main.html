@@ -4,6 +4,10 @@
     </div>
 
     <div class="center-center">
-        <converter-component></converter-component>
+        <p>This area is being used for the RESTful API testing. Use the following button to post gibberish:</p>
+        <button ng-click="performPost()">Post Data</button>
+        <p>The next button retrieves some data</p>
+        <button ng-click="performGet()">Get data</button><br />
+        <textarea id="getDataTextArea" ng-readonly="true" rows="25" cols="100" ng-model="textAreaText"></textarea><br />
     </div>
 </div>

@@ -3,10 +3,10 @@ var app = angular.module('main');
 app.config(function($routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl: "client/pages/main.html"
+            templateUrl: "pages/main.html"
         })
         .when("/converter", {
-            templateUrl: "client/pages/converter.html"
+            templateUrl: "pages/converter.html"
         })
 });
 

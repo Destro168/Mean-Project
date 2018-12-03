@@ -4,10 +4,12 @@ This is the **MEAN Project** built with the latest versions of Mongoose, Express
 
 # Usage
 
-* Make sure MongoDB is installed. If it isn't, then install it.
+* Make sure the latest version of MongoDB is installed. If it isn't, then install it/update.
+* Make sure Python is installed, version 3.0 or higher. If below version 3.0, edit start-python-server.bat to use SimpleHTTPServer.
 * Make sure to edit 'start-mongo-server.bat' to have a proper path for your data/db folders, assuming that they are not in the default location.
 * Click 'start-mongo-server.bat' to start the database.
 * Click 'start-node-server.bat' to start the web server.
+* Click 'start-python-server.bat' to start a python server to serve up the web client directory. Feel free to use other programs/services to serve up the client directory if desired.
 * Open index.html in any browser to have the web page display.
 
 # MEAN Stack Components:

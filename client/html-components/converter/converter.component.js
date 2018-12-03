@@ -1,7 +1,7 @@
 angular.
 module('main').
 component('converterComponent', {
-    templateUrl: 'client/html-components/converter/converter.component.html',
+    templateUrl: 'html-components/converter/converter.component.html',
     controller: function converterComponent($scope, $http) {
         // Variables
         $scope.textAreaText = "";

@@ -1,7 +1,7 @@
 angular.
 module('main').
 component('leftNavBarComponent', {
-	templateUrl: 'client/html-components/left-nav-bar/left-nav-bar.component.html',
+	templateUrl: 'html-components/left-nav-bar/left-nav-bar.component.html',
 	controller: function leftNavBarComponent($scope, serviceHeaderShow) {
 		
 		$scope.serviceHeaderShow = serviceHeaderShow;

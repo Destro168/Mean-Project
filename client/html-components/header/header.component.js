@@ -1,7 +1,7 @@
 angular.
 module('main').
 component('headerComponent', {
-	templateUrl: 'client/html-components/header/header.component.html',
+	templateUrl: 'html-components/header/header.component.html',
 	controller: function headerController($scope, serviceHeaderShow) {
 		$scope.headerTitlesArray = ["Bookmarks", "HTML", "CSS", "AngularJS"];
 

@@ -37,27 +37,34 @@ function saveData() {
             userDataJSON: "{Some String}",
         }).save();
     }
-    
+
     console.timeEnd('looper');
     console.log("Ending writes!");
 }
 
+/* The delete function is unused. Would need to be actually written...
 function deleteData() {
     userDataModel.delete
     userDataModel.find(function (err, dataModel) {
         if (err)
             return console.error("Unknown Error (926): " + err);
-        
+
         console.log(dataModel);
     });
 }
+*/
 
-function getUserData() {
-    userDataModel.find(function (err, dataModel) {
-        if (err)
-            return console.error("Unknown Error (23): " + err);
-
-        console.log(dataModel)
+function getUserData(res) {
+    // Just get the first record.
+    userDataModel.findById("5c048c5009700e0d584e9253", function (err, post) {
+        if (err) {
+            res.json(err);
+            return;
+        }
+        
+        res.status(200);
+        res.json(post);
+        res.end();
     });
 }
 

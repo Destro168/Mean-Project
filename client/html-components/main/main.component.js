@@ -1,12 +1,25 @@
 angular.
 module('main').
 component('mainComponent', {
-	templateUrl: 'client/html-components/main/main.component.html',
+	templateUrl: 'html-components/main/main.component.html',
 	controller: function mainComponent($scope, $http) {
 
-		$scope.performPost = function() {
+		$scope.performPost = function () {
 			$http.post("http://localhost:8080/saveData", "Hello");
-		}	
+		}
+
+		$scope.performGet = function () {
+			$http({
+				method: 'GET',
+				url: 'http://localhost:8080/getData',
+				data: {'uselessData' : "face"}
+			}).then(function successCallback(response) {
+				console.log("Successfully got data!");
+				document.getElementById("getDataTextArea").innerText = JSON.stringify(response);
+			}, function errorCallback(response) {
+				console.log("Failed to get data!: ", response);
+			});
+		}
 	}
 });
 

@@ -1,10 +1,11 @@
 
-<link rel="stylesheet" href="client/html-components/converter/converter.component.css">
+<link rel="stylesheet" href="html-components/converter/converter.component.css">
 
 <div class="addDividingBorder">
-    <p>Type into the left text area. The right-area is locked from editing.</p>
+    <p>The converter converts snippets of code into a format that can be inserted into this program as bookmarks for display.</p>
+    <p>Usage: Type code into the left area and hit the 'Parse' button below.</p>
+    <p>Note: The right area is locked from editing.</p> 
     <textarea rows="40" cols="40" ng-model="userInput"></textarea>
     <textarea id="textArea1" ng-readonly="true" rows="40" cols="40" ng-model="textAreaText"></textarea><br />
     <button ng-click="parseContent()" id="b">Parse!</button>
-    <p>Converts Raw HTML Into A Format That Can Be Inserted Into Angular Controllers.</p>
 </div>

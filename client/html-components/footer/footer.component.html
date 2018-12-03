@@ -1,5 +1,14 @@
-<link rel="stylesheet" href="client/html-components/footer/footer.component.css">
+<link rel="stylesheet" href="html-components/footer/footer.component.css">
 
-<div class="nav-bar-elements styleTextPrimary" ng-repeat="x in navBarElementArray">
+<style>
+div.footer-order {
+    width: calc(100% / 3);
+    height: 100%;
+    float: left;
+    padding-top: 5px;
+}
+</style>
+
+<div class="footer-order styleTextPrimary" ng-repeat="x in navBarElementArray">
     {{x}}
 </div>
